@@ -6,54 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/googlefavicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/gfavicon (1).png" type="image/png">
 </head>
 <body>
-    <nav> <!--top right side of page-->
-        <ul>
-            <li><a href="https://gmail.com" target="_blank">Gmail</a> </li>
-            <li><a href="#">Images</a> </li>
-            <li><a href="#"><img src="img/dokuzlumenu.png" alt="menu"></a></li>
-            <li><button>Sıgn In</button> </li>
+    <header class="clearfix">
+      <ul class="header-right">
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li><a href="#"><img id="appicon" src="assets/appicon.png" alt="appicon"></a></li>
+          <li><a href="#"><button id="signin-button">Sign In</button></a></li>
+      </ul>
+    </header>
+    <main>
+        <img id="google-logo" src="assets/googlelogo.png" alt="google-logo">
+        <div class="searchbar">
+            <img id="magnify" src="assets/magnifying_glass.jpg" alt="magnify-glass">
+            <input id="search" type="search" name="Search" >
+            <img id="keyboard" src="assets/keyboard.png" alt="keyboard" >
+            <img id="microphone" src="assets/google_microphone.png" alt="microphone">
+        </div>
+
+        <div class="botton-container">
+            <button id="btn1" type="button" name="button">Google Search</button>
+            <button id="btn2" type="button" name="button">I'm Feeling Lucky</button>  
+        </div>
+
+        <div class="lang">
+            <p id="language">Other Languages you can use Google:<a href="#"> Turkish</a></p>
+        </div> 
+    </main>
+    <footer>
+        <div class="country">Turkey</div>
+
+        <ul class="footer-left">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
         </ul>
-    </nav>
 
-    <section> <!--There is content in section, middle of the page-->
-        <img src="img/google-logo.png" alt="google logo" title="Google" >
-        <div id="search">
-            <label for="Search"><img src="img/amplifier.png" alt="glass"></label>
-            <input type="text" name="" id="Search">
-            <img src="img/mic-2.png" alt="Search By Voice" title="Search by Voice">
-        </div>
-        <div id="buttons">
-            <button>Gooole Search</button>
-            <button>I'm Feeling Lucky</button>
-        </div>
-
-        <p>
-            Google offered in: <a href="#">Turkish</a>
-        </p>
-    </section>
-    <footer> <!--This is footer part-->
-        <a href="#" id="Turkey">Turkey</a>
-        <hr>
-        <div id="footerbottom">
-            <div id="footer-left">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">How Search Works</a></li>
-                </ul>
-            </div>
-            <div id="footer-right">
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </div>
-        </div>
+        <ul class="footer-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
     </footer>
 </body>
 </html>
